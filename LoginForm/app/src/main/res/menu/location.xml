@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/pic"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:title="privacy"
+        android:id="@+id/privacy"
+        android:icon="@drawable/pic"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/pic"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="invite Friend"
+        android:id="@+id/inviteFriend"
+        android:icon="@drawable/pic"
+        app:showAsAction="never"/>
+
+</menu>

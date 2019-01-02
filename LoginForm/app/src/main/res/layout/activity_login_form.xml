@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_margin="20dp"
+    tools:context=".LoginFormActivity">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_weight="0.30"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.70"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:drawableLeft="@drawable/email"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="E-mail"
+            android:inputType="text"
+            android:textStyle="italic" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:id="@+id/pwd"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+
+            android:onClick="loginbtn"
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:hint="Login"
+            android:inputType="text"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:background="#0091ea"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:onClick="forgotpwd"
+                android:id="@+id/fgtpsd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Forgot Password??"
+                android:textColor="#aa00ff"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:onClick="rgstrnw"
+                android:id="@+id/rgstrnw"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+                android:layout_margin="40dp"
+                android:text="Register Now!!"
+                android:textColor="#aa00ff"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+            <ImageView
+                android:src="@drawable/pic"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"  />
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
